@@ -7,9 +7,13 @@
 
 int main(void)
 {
-	char alp (a..z);
-	int al;
+	char X = 'a';
 
-	al = putchar(al);
+	while (X <= 'z')
+	{
+		putchar(X);
+		X++;
+	}
+	putchar('\n');
 	return (0);
 }
