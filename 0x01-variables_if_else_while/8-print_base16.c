@@ -1,24 +1,22 @@
 #include <stdio.h>
-/**
-*main - This prints hex digits from
-*
-*Return: always return zero
-*/
 
 int main(void)
 {
-	char X = 'a';
-	int D = 0;
+	int starting_num;
+	char hex_char;
 
-	while (D <= 9)
+	starting_num = 0;
+	hex_char = 'a';
+
+	while (starting_num < 10)
 	{
-		putchar(D + '0');
-		D++;
+		putchar(starting_num + '0');
+		starting_num++;
 	}
-	while (X <= 'f')
+	while (hex_char < 'g')
 	{
-		putchar(X);
-		X++;
+		putchar(hex_char);
+		hex_char++;
 	}
 	putchar('\n');
 	return (0);
