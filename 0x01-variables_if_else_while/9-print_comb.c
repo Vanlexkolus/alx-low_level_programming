@@ -16,7 +16,7 @@ int main(void)
 		if (zero < 10)
 			putchar(',');
 		putchar (' ');
-	}
 	putchar('\n');
+	}
 	return (0);
 }
