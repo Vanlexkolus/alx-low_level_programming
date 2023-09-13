@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	char u = 'a';
-	char v = 'z';
+	int u = 'a';
+	int v = 'z';
 		if (u <= z)
 		{
 			putchar ('u');
