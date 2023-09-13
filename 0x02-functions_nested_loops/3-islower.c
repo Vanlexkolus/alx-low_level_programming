@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * main - this code scans for small
+ *
+ * Return: always return zero
+ */
 
 int _islower(int c)
 {
