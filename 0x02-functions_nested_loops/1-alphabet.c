@@ -8,11 +8,9 @@
 void print_alphabet(void)
 
 {
-
-        char A = 'a';
-	char Z = 'z';
+	char A = 'a';
 	
-        if (A <= Z)
+        if (A <= 'z')
 	{
 		_putchar(A);
 		A++;
