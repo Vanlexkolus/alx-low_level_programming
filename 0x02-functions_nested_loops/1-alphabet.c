@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * main - this code prints alphabets in small letters
  *
@@ -10,7 +10,7 @@ void print_alphabet(void)
 {
 	char A = 'a';
 	
-        if (A <= 'z')
+        while (A <= 'z')
 	{
 		_putchar(A);
 		A++;
