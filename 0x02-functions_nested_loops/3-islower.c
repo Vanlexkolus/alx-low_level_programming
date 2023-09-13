@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - this code scans for small
- *
+ * _islower  - this code scans for small
+ * @c: c is an integer decleared in the function
  * Return: always return zero
  */
 
