@@ -5,15 +5,18 @@
  * Return: always return zero
  */
 
-int main(void)
-{
-	int u = 'a';
-	int v = 'z';
-		if (u <= v)
-		{
-			_putchar ('u');
-			u++;
-		}
+void print_alphabet(void)
 
-	return (0);
+{
+
+        char letter;
+
+
+        for (letter = 'a'; letter <= 'z'; letter++)
+
+                _putchar(letter);
+
+
+        _putchar('\n');
+
 }
