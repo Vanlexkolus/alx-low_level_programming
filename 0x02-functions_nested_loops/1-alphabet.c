@@ -11,7 +11,7 @@ int main(void)
 	int v = 'z';
 		if (u <= v)
 		{
-			putchar ('u');
+			_putchar ('u');
 			u++;
 		}
 
