@@ -9,7 +9,7 @@ int main(void)
 {
 	int u = 'a';
 	int v = 'z';
-		if (u <= z)
+		if (u <= v)
 		{
 			putchar ('u');
 			u++;
