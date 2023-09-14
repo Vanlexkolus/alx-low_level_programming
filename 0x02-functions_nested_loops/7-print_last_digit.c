@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_last_digit
+ * @n: n holds the value
+ * Return: always return zero
+ */
 
 int print_last_digit(int n)
 {
@@ -11,7 +16,7 @@ int print_last_digit(int n)
 	if (v < 0)
 	{
 		v = -v;
-		_putchar (v + '0');
+		_putchar (v + 0);
 	}
 	return (v);
 }
