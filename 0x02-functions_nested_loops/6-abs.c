@@ -1,12 +1,14 @@
 #include "main.h"
 
-int _abs(int)
+int _abs(int g)
 {
-	int n;
-	int o;
+	if (g >= 0)
 	{
-		int o = _abs(n);
-		_putchar (n);
+		return (g);
+	}
+	else
+	{
+		return (-g);
 	}
 	return (0);
 }
