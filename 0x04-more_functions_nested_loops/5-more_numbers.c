@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * more_numbers - this function prints 10 - 14 ten times
+ *
+ * Retun: There is no return value so its void
+ */
+
 void more_numbers(void)
 {
 	int a, b;
