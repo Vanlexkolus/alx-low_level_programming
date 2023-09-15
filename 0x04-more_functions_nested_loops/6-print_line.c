@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_line - this code prints lines
+ * @n: Holds the integer value
+ * Return: Returns void
+ */
+
 void print_line(int n)
 {
 	if (n <= 0)
