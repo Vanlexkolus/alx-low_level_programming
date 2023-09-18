@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- *  _strlen - a function to list string length
- *
+ * _strlen - a function to retuen the length of a string
  * @s: character
  * Retun: lnt
  */
 
 int _strlen(char *s)
 {
-	int lnt;
+	int ls = 0;
 
-	while (lnt != '\0')
+	while (*s != '\0')
 	{
-		lnt++;
+		ls++;
 		s++;
 	}
-	return (lnt);
+	return (ls);
 }
