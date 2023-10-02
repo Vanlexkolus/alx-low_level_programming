@@ -16,7 +16,8 @@ int main(void)
 		if (zero < 10)
 			putchar(',');
 		putchar (' ');
-	putchar('\n');
+		if (zero = 9)
+			putchar('\n');
 	}
 	return (0);
 }
