@@ -2,51 +2,44 @@
 #include <stdlib.h>
 
 /**
-Write a function that concatenates two strings.
-
-Prototype: char *string_nconcat(char *s1, char *s2, unsigned int n);
-The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated
-If the function fails, it should return NULL
-If n is greater or equal to the length of s2 then use the entire string s2
-
-if NULL is passed, treat it as an empty string
-*/
+ * string_nconcat - Write a function that concatenates two strings.
+ * @s1: char
+ * @s2: char
+ * @n: unsigned int
+ * Return: Realocated memory
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a = 0;
-	unsigned int b = 0;
-	int c;
-	char *d;
-	
-	for (c = 0; s1[c] != '\0'; c++)
-	{
-		a++;
-	}
-	for (c = 0; s2[c] != '\0'; c++)
-	{
-		b++;
-	}
-	d = malloc(sizeof(char) * a + n);
+	char *m;
+	unsigned int i;
+	unsigned int s1_len = 0, s2_len = 0;
 
-	if (d == NULL)
+	if (s1 == NULL)
+		return ("");
+	if (s2 == NULL)
+		return ("");
+	for (i = 0; s1[i] != '\0'; i++)
 	{
+		s1_len++;
+	}
+	for (i = 0; s2[i] != '\0'; i++)
+	{
+		s2_len++;
+	}
+	if (n >= s2_len)
+		n = s2_len;
+	m = malloc(sizeof(char) * s1_len + n + 1);
+	if (m == NULL)
 		return (NULL);
-	}
-	if (n >= b)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		int H[] = *s1 + *s2;
+		m[i] = s1[i];
 	}
-	else if (n < b)
+	for (i = 0; i < n; i++)
 	{
-		for (c = 0; s1[c] != '\0'; c++)
-		{
-			H[c] = s1[c];
-		}
-		for (c = 0; n <= b; c++)
-			{
-				H[] = s2[c];
-			}
+		m[i + s1_len] = s2[i];
 	}
-	return (0);
+	m[s1_len + n] = '\0';
+	return (m);
 }
