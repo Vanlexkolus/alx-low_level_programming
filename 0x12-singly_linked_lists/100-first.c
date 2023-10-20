@@ -1,25 +1,12 @@
 #include <stdio.h>
 
-void before_main(void) __attribute__((constructor));
-
 /**
- * before_main - Function to be executed before main
+ * before_main - executes this function before main function
+ * Note: made possible by prior declaration of "__attribute__ ((constructor))"
  */
 
-void before_main(void)
+void __attribute__ ((constructor)) before_main()
 {
-	printf("You're beat! and yet, you must allow,\n"
-		"I bore my house upon my back!\n");
-}
-
-/**
- * main - prints the funtion
- * Return: nothing
- */
-
-int main(void)
-{
-	printf("(A tortoise, having a pretty good sense of a hare's nature,\n"
-		"challenges one to a race.)\n");
-	return (0);
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
