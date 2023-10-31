@@ -27,8 +27,11 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[u])
 			u++;
 		wr = write(doc, text_content, u);
-		if (wr != u)
+		if (wr == -1 || wr != u)
+		{
+			close(doc);
 			return (-1);
+		}
 	}
 	close(doc);
 	return (1);
