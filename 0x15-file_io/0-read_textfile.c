@@ -23,9 +23,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	bytesRead = fread(buffer, 1, sizeof(buffer), fptr);
-	while (totalRead < letters && bytesRead)
+	while (totalRead < letters)
 	{
+		bytesRead = fread(buffer, 1, sizeof(buffer), fptr);
+
+		if (bytesRead == 0)
+		{
+			break;
+		}
+
 		if (totalRead + bytesRead > letters)
 		{
 			bytesRead = letters - totalRead;
