@@ -53,5 +53,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		totalRead += bytesRead;
 	}
 	fclose(fptr);
+	free(buffer);
 	return (totalRead);
 }
